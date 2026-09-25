@@ -1,21 +1,15 @@
-# Obsidian: device-specific workspace state
-/.obsidian/workspace.json
-/.obsidian/workspace-mobile.json
-/.obsidian/workspaces.json
+# Obsidian 配置、插件、主题、工作区状态等全部不上传
+.obsidian/
 
-# Obsidian cache
-/.obsidian/cache/
-/.obsidian/.obsidian-cache/
+# Obsidian 回收站
+.trash/
 
-# Obsidian trash
-/.trash/
-
-# Linux
+# Linux / Android 可能产生的临时文件
 .directory
 .Trash-*
 .nfs*
 
-# Temporary/editor files
+# 编辑器临时文件
 *~
 *.tmp
 *.temp
