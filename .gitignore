@@ -1,0 +1,23 @@
+# Obsidian: device-specific workspace state
+/.obsidian/workspace.json
+/.obsidian/workspace-mobile.json
+/.obsidian/workspaces.json
+
+# Obsidian cache
+/.obsidian/cache/
+/.obsidian/.obsidian-cache/
+
+# Obsidian trash
+/.trash/
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# Temporary/editor files
+*~
+*.tmp
+*.temp
+*.swp
+*.swo
