@@ -1,0 +1,71 @@
+---
+tags:
+  - math
+  - math/<领域，如：linear-algebra/calculus/probability>
+status: 📝草稿 # 📝草稿 / 🔄理解中 / ✅已掌握
+created: {{date}} 
+prerequisites: []
+---
+
+# {{title}}
+
+> [!abstract] 核心直觉（一句话概括）
+> 用通俗、几何或直观的语言解释这个概念本质上在做什么。
+
+---
+
+## 1. 前置依赖 (Prerequisites)
+* 上级概念 / 领域：[[ ]]
+* 依赖基础：[[ ]], [[ ]]
+
+---
+
+## 2. 形式化定义 (Definition)
+
+> [!info] 定义
+> 设 $X$ 为...，若满足以下条件：
+> 1. 
+> 2. 
+> 则称 $X$ 为 **{{title}}**。
+
+---
+
+## 3. 定理与性质 (Theorems & Properties)
+
+> [!theorem] 定理名称 / 性质
+> 设 ...，则有：
+> $$ \sum_{i=1}^n x_i = ... $$
+
+> [!proof]- 证明过程（点击展开）
+> **证：**
+> 1. 由已知条件可知：
+>    $$ ... $$
+> 2. 因此：
+>    $$ ... $$
+> $\blacksquare$
+
+---
+c
+## 4. 典型示例与反例 (Examples & Counterexamples)
+
+### 典型示例
+* **例 1**：
+  $$ ... $$
+
+### 常见反例 / 易错点
+> [!warning] 注意
+> 如果不满足条件 $A$，则结论不成立。例如：...
+
+---
+
+## 5. 几何解释 / 图示 (Intuition & Visualization)
+<!-- 可以粘贴 Excalidraw 白板或图片 -->
+![[Pasted image.png|400]]
+
+---
+
+## 6. 关联与延伸 (Connections)
+* **特例**：[[ ]]
+* **推广/广义化**：[[ ]]
+* **对偶/类似概念**：[[ ]]
+* **实际应用**：[[ 
