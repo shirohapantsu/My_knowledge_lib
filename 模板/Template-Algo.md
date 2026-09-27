@@ -1,5 +1,4 @@
 ---
-aliases: []
 tags:
   - algorithm
   - algorithm/<分类，如：dp/graph/tree/sliding-window>
@@ -9,7 +8,7 @@ problem_id:
 source_url: 
 status: 🔄待复习 # ⏳做不出 / 🔄待复习 / ✅已掌握
 review_count: 0
-created: {{date}} {{time}}
+created:  {{date}}
 ---
 
 # {{title}}
