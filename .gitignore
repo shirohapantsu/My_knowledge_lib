@@ -15,3 +15,8 @@
 *.temp
 *.swp
 *.swo
+
+# 插件
+copilot/
+.copilot/
+.agents/
