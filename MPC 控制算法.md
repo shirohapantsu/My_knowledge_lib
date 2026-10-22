@@ -556,6 +556,37 @@ $$
 
 步长可通过线搜索确定。重复“线性化—解 QP—更新轨迹”，直到最优性和约束残差达到容差，或达到迭代与时间限制；通常只能寻找局部解。[SQP 与 NMPC 教学资料](https://www.syscop.de/files/2015ss/numopt/e9_SQP.pdf)
 
+##### 回溯步长（Backtracking Line Search）
+
+**QP 给出修改轨迹的方向，回溯决定沿该方向走多远。** 由于 QP 使用局部近似，直接取完整步长 $\alpha_j=1$，可能使原问题的非线性动力学残差增大。因此先试完整步长，若效果不够好，就逐次缩小步长。
+
+对约束优化，接受一步时需要综合考虑目标代价与约束违反程度。一种常见选择是 $\ell_1$ 评价函数（merit function）：
+
+$$
+\begin{aligned}
+\theta_k(z)
+&=\|r_k(z)\|_1
++\|[\ell_k-C_z z]_+\|_1
++\|[C_z z-h_k]_+\|_1\\
+\phi_\rho(z)&=J_k(z)+\rho\,\theta_k(z),\qquad \rho>0
+\end{aligned}
+$$
+
+其中 $[v]_+$ 表示对向量逐分量取 $\max(v_i,0)$，$\theta_k$ 汇总等式残差和上下界违反量，$\rho$ 是罚权重。在一次回溯中固定 $\rho$ 和 QP 方向 $\Delta z^{(j)}$。记 $d_j=\phi_\rho'(z_k^{(j)};\Delta z^{(j)})$ 为评价函数沿该方向的单侧方向导数；进行下面的下降线搜索前，应使 $d_j<0$。
+
+从 $\alpha=1$ 开始，计算试探点 $z_{\mathrm{trial}}=z_k^{(j)}+\alpha\Delta z^{(j)}$，用**原非线性函数**重新计算代价与约束残差，并检验 **Armijo 充分下降条件**：
+
+$$
+\boxed{
+\phi_\rho\!\left(z_k^{(j)}+\alpha\Delta z^{(j)}\right)
+\leq\phi_\rho\!\left(z_k^{(j)}\right)+c_1\alpha d_j
+},\qquad 0<c_1<1
+$$
+
+由于 $d_j<0$，右侧要求评价函数获得与步长相称的下降。若满足，接受 $\alpha_j=\alpha$ 并更新轨迹；否则令 $\alpha\leftarrow\beta\alpha$（$0<\beta<1$），继续试探。例如取 $\beta=0.5$，候选步长依次为 $1,\frac12,\frac14,\ldots$。**同一次回溯只调整步长，不重新求解 QP。** acados 提供基于评价函数的回溯及 Armijo 条件选项。[acados 官方文档](https://docs.acados.org/python_interface/index.html#acados_template.acados_ocp_options.AcadosOcpOptions.globalization)
+
+若尚未收敛却没有下降方向，应检查罚权重、Hessian 正则化和 QP 求解状态；若步长小于设定下限，或回溯次数、计算时间达到上限，应报告线搜索失败，不能将其视为收敛。回溯改善迭代的稳健性，但中间轨迹仍可能存在非线性约束残差。
+
 #### （2）RTI：实时迭代
 
 **RTI（Real-Time Iteration）基于 SQP，每个采样周期通常只进行一次 SQP 更新，即构造并求解一个 QP，不等待当前 NLP 完全收敛。** 下一周期用更新后的轨迹继续迭代。[RTI 研究论文](https://arxiv.org/abs/2403.07101)
