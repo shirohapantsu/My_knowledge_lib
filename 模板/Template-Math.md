@@ -1,9 +1,9 @@
 ---
 tags:
   - math
-  - math/<领域，如：linear-algebra/calculus/probability>
-status: 📝草稿 # 📝草稿 / 🔄理解中 / ✅已掌握
-created: {{date}} 
+status: 📝草稿
+created:
+  "{ date }":
 prerequisites: []
 ---
 

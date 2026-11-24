@@ -1,14 +1,14 @@
 ---
 tags:
   - algorithm
-  - algorithm/<分类，如：dp/graph/tree/sliding-window>
-difficulty: Medium # Easy / Medium / Hard
-platform: LeetCode # LeetCode / Codeforces / 洛谷 / 模板
-problem_id: 
-source_url: 
-status: 🔄待复习 # ⏳做不出 / 🔄待复习 / ✅已掌握
+difficulty: Medium
+platform: LeetCode
+problem_id:
+source_url:
+status: 🔄待复习
 review_count: 0
-created:  {{date}}
+created:
+  "{ date }":
 ---
 
 # {{title}}
