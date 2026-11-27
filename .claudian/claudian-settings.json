@@ -1,0 +1,382 @@
+{
+  "userName": "",
+  "permissionMode": "auto",
+  "model": "haiku",
+  "effortLevel": "high",
+  "serviceTier": "default",
+  "enableAutoTitleGeneration": true,
+  "titleGenerationLocale": "",
+  "titleGenerationModel": "",
+  "showTabTitlesByDefault": true,
+  "chatFontScale": 100,
+  "excludedTags": [],
+  "mediaFolder": "",
+  "systemPrompt": "",
+  "sharedEnvironmentVariables": "",
+  "envSnippets": [],
+  "keyboardNavigation": {
+    "scrollUpKey": "w",
+    "scrollDownKey": "s",
+    "focusInputKey": "i"
+  },
+  "requireCommandOrControlEnterToSend": false,
+  "locale": "zh-CN",
+  "providerConfigs": {
+    "antigravity": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": true,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "installationMethodsByHost": {},
+      "modelAliases": {},
+      "preferredReasoningByModel": {},
+      "visibleModels": [
+        "gemini-4-neon",
+        "gemini-4-hydrogen",
+        "gemini-4-carbon",
+        "gemini-4-argon",
+        "gemini-3.8-flash",
+        "claude-opus-5-5"
+      ],
+      "wslDistroOverridesByHost": {},
+      "selectedModelsByHost": {
+        "device-05b4db36e88ae82c34d67de7897571ee2c51476a635613d4c65889953ed83bee": {
+          "defaultModelId": null,
+          "models": [
+            {
+              "displayName": "Gemini 4 Neon",
+              "rawId": "gemini-4-neon",
+              "reasoningEfforts": [
+                {
+                  "label": "Low",
+                  "value": "low"
+                },
+                {
+                  "label": "Medium",
+                  "value": "medium"
+                },
+                {
+                  "label": "High",
+                  "value": "high"
+                },
+                {
+                  "label": "xHigh",
+                  "value": "xhigh"
+                }
+              ]
+            },
+            {
+              "displayName": "Gemini 4 Carbon",
+              "rawId": "gemini-4-carbon",
+              "reasoningEfforts": [
+                {
+                  "label": "Low",
+                  "value": "low"
+                },
+                {
+                  "label": "Medium",
+                  "value": "medium"
+                },
+                {
+                  "label": "High",
+                  "value": "high"
+                }
+              ]
+            },
+            {
+              "displayName": "Gemini 4 Argon",
+              "rawId": "gemini-4-argon",
+              "reasoningEfforts": [
+                {
+                  "label": "Low",
+                  "value": "low"
+                },
+                {
+                  "label": "Medium",
+                  "value": "medium"
+                },
+                {
+                  "label": "High",
+                  "value": "high"
+                }
+              ]
+            },
+            {
+              "displayName": "Gemini 4 Hydrogen",
+              "rawId": "gemini-4-hydrogen",
+              "reasoningEfforts": [
+                {
+                  "label": "Low",
+                  "value": "low"
+                },
+                {
+                  "label": "Medium",
+                  "value": "medium"
+                },
+                {
+                  "label": "High",
+                  "value": "high"
+                },
+                {
+                  "label": "xHigh",
+                  "value": "xhigh"
+                }
+              ]
+            },
+            {
+              "displayName": "Gemini 3.8 Flash",
+              "rawId": "gemini-3.8-flash",
+              "reasoningEfforts": [
+                {
+                  "label": "Low",
+                  "value": "low"
+                },
+                {
+                  "label": "Medium",
+                  "value": "medium"
+                },
+                {
+                  "label": "High",
+                  "value": "high"
+                }
+              ]
+            },
+            {
+              "displayName": "Claude Opus 5.5",
+              "rawId": "claude-opus-5-5",
+              "reasoningEfforts": [
+                {
+                  "label": "Low",
+                  "value": "low"
+                },
+                {
+                  "label": "Medium",
+                  "value": "medium"
+                },
+                {
+                  "label": "High",
+                  "value": "high"
+                }
+              ]
+            }
+          ],
+          "refreshedAt": 1795757746151
+        }
+      }
+    },
+    "claude": {
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "enabled": true,
+      "outputStyle": null,
+      "promptSuggestions": false,
+      "discoveredOutputStyles": [
+        "default",
+        "Proactive",
+        "Explanatory",
+        "Learning"
+      ],
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "loadUserSettings": true,
+      "enableChrome": false,
+      "visibleModels": [],
+      "modelAliases": {},
+      "environmentVariables": "",
+      "environmentHash": "",
+      "selectedModels": []
+    },
+    "codex": {
+      "enabled": true,
+      "safeMode": "workspace-write",
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "modelAliases": {},
+      "visibleModels": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ],
+      "enableUltraEffort": false,
+      "responseStyle": "pragmatic",
+      "responseVerbosity": "default",
+      "reasoningSummary": "detailed",
+      "environmentVariables": "",
+      "environmentHash": "",
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "selectedModels": [
+        {
+          "model": "gpt-6.2-sol",
+          "displayName": "GPT-6.2 Sol",
+          "description": "Fast, go-to model for coding and everyday work.",
+          "supportedReasoningEfforts": [
+            {
+              "value": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "value": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "value": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "value": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "value": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "value": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ],
+          "defaultReasoningEffort": "low",
+          "serviceTiers": [
+            {
+              "id": "priority",
+              "name": "Fast",
+              "description": "2x speed, increased usage"
+            }
+          ],
+          "defaultServiceTier": null,
+          "inputModalities": [
+            "text",
+            "image"
+          ],
+          "isDefault": true
+        },
+        {
+          "model": "gpt-6.2-astra",
+          "displayName": "GPT-6.2 Astra",
+          "description": "Our most capable model for complex coding and professional work.",
+          "supportedReasoningEfforts": [
+            {
+              "value": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "value": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "value": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "value": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "value": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "value": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ],
+          "defaultReasoningEffort": "low",
+          "serviceTiers": [
+            {
+              "id": "priority",
+              "name": "Fast",
+              "description": "2x speed, increased usage"
+            }
+          ],
+          "defaultServiceTier": null,
+          "inputModalities": [
+            "text",
+            "image"
+          ],
+          "isDefault": false
+        }
+      ]
+    },
+    "deepseek": {
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "enabled": false,
+      "codeMode": false,
+      "presetPlugins": "",
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "environmentVariables": "",
+      "environmentHash": "",
+      "visibleModels": [],
+      "modelAliases": {},
+      "preferredReasoningByModel": {},
+      "selectedModels": []
+    },
+    "grok": {
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredReasoningByModel": {},
+      "visibleModels": [],
+      "selectedModelsByHost": {}
+    },
+    "opencode": {
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredThinkingByModel": {},
+      "thinkingOptionsByModel": {},
+      "visibleModels": [],
+      "selectedModels": []
+    },
+    "pi": {
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredThinkingByModel": {},
+      "visibleModels": [],
+      "selectedModels": []
+    }
+  },
+  "settingsProvider": "claude",
+  "lastSelectedChatModel": null,
+  "inlineEditModel": null,
+  "savedProviderModel": {},
+  "savedProviderEffort": {},
+  "savedProviderServiceTier": {},
+  "savedProviderPermissionMode": {
+    "claude": "auto"
+  },
+  "enableAutoScroll": true,
+  "deferMathRenderingDuringStreaming": true,
+  "pluginRenderedFenceLanguages": [],
+  "expandFileEditsByDefault": false,
+  "chatViewPlacement": "right-sidebar",
+  "enableZenMode": true,
+  "zenModePosition": null,
+  "enableDualPane": true,
+  "dualPaneSide": "right",
+  "restoreTabsOnStartup": true,
+  "skillsSynced": false,
+  "sessionManagerOrganization": "list",
+  "sessionManagerSort": "last-updated",
+  "sessionAutoArchiveAfter": "off",
+  "pinnedLinkedContentPaths": [],
+  "hiddenCommands": []
+}
